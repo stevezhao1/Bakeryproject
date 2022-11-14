@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Backery4</string>
+
+    <string-array name="stores">
+        <item>Giant</item>
+        <item>Safeway</item>
+        <item>Whole Food</item>
+    </string-array>
+</resources>
