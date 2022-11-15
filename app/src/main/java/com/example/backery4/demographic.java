@@ -8,14 +8,20 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.SeekBar;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class demographic extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
+    private TextView salaryRange;
+    private SeekBar salarySeekBar;
+    private int currentSalary = 40000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demographic);
         Button demo_button = (Button) findViewById(R.id.breadclick);
@@ -33,7 +39,27 @@ public class demographic extends AppCompatActivity implements AdapterView.OnItem
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
+
+        salaryRange = findViewById(R.id.income_value);
+        salarySeekBar = findViewById(R.id.income_Bar);
+        salarySeekBar.setOnSeekBarChangeListener(seekBarListener);
     }
+    private SeekBar.OnSeekBarChangeListener seekBarListener =
+            new SeekBar.OnSeekBarChangeListener() {
+                // update percent, then call calculate
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int progress,
+                                              boolean fromUser) {
+                    currentSalary = progress ;
+                }
+
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) { }
+
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) { }
+            };
+
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
