@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:gravity="center_vertical"
-        android:text="Backery "
+        android:text="Bakery"
         android:textColor="#020202"
         android:textSize="40dp"
         android:textStyle="italic"
