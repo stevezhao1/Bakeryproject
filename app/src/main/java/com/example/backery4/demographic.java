@@ -38,7 +38,6 @@ public class demographic extends AppCompatActivity implements AdapterView.OnItem
             }
         });
 
-
         Spinner spinner = findViewById(R.id.store_choice);
         ArrayAdapter<CharSequence> adapter=ArrayAdapter.createFromResource(this,R.array.stores, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
