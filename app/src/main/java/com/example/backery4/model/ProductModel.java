@@ -6,7 +6,6 @@ public class ProductModel {
     public String price;
     public String quantity;
     public int imagePath;
-    //    public int price;
 
 
     public ProductModel(String productName, String price, String quantity, int imagePath) {
