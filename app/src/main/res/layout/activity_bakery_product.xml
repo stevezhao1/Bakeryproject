@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="52dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="30dp"
+            android:text="Select Bakery Products"
+            android:textColor="#020202"
+            android:textSize="30dp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bagelImage"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/bagel" />
+
+            <CheckBox
+                android:id="@+id/bagelCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Bagel" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pieImage"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/pie" />
+
+            <CheckBox
+                android:id="@+id/pieCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Pie" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/cookieImage"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/cookie" />
+
+            <CheckBox
+                android:id="@+id/cookieCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Cookie" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/muffinImage"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/muffin" />
+
+            <CheckBox
+                android:id="@+id/muffinCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Muffin" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/doughnutImage"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/doughnut" />
+
+            <CheckBox
+                android:id="@+id/doughnutCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Doughnut" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/breadImage"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginBottom="80dp"
+                android:src="@drawable/bread" />
+
+            <CheckBox
+                android:id="@+id/breadCheck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Bread" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/discount_button"
+            android:layout_width="150dp"
+            android:layout_height="58dp"
+            android:layout_marginStart="146dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="44dp"
+            android:backgroundTint="#FF9800"
+            android:text="See discounts "
+            />
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

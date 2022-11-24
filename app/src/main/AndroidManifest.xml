@@ -13,6 +13,14 @@
         android:theme="@style/Theme.Backery"
         tools:targetApi="31">
         <activity
+            android:name=".BakeryProduct"
+            android:exported="true">
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Addapter.ProductAdapter"
             android:exported="false">
             <meta-data
@@ -21,13 +29,6 @@
         </activity>
         <activity
             android:name=".Item_page"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".ItemPage"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -76,6 +77,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
 
             <meta-data
                 android:name="android.app.lib_name"

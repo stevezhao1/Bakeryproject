@@ -33,7 +33,7 @@ public class demographic extends AppCompatActivity implements AdapterView.OnItem
         demo_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(demographic.this,BakeryProducts.class);
+                Intent intent=new Intent(demographic.this,BakeryProduct.class);
                 startActivity(intent);
             }
         });
