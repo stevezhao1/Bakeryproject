@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Backery"
         tools:targetApi="31">
+
         <activity
             android:name=".BakeryProduct"
             android:exported="true">
@@ -35,7 +36,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".ShopingCartActivity"
+            android:name=".ShoppingCartActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

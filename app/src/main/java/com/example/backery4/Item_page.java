@@ -4,9 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
-import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -81,7 +79,7 @@ public class Item_page extends AppCompatActivity implements ProductAdapter.HomeC
                 if (cart_count < 1) {
                     Toast.makeText(this, "there is no item in cart", Toast.LENGTH_SHORT).show();
                 } else {
-                    startActivity(new Intent(this, ShopingCartActivity.class));
+                    startActivity(new Intent(this, ShoppingCartActivity.class));
                 }
                 break;
             default:

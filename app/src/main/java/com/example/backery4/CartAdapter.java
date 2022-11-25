@@ -1,8 +1,8 @@
 package com.example.backery4;
 
-import static com.example.backery4.ShopingCartActivity.grandTotal;
-import static com.example.backery4.ShopingCartActivity.grandTotalplus;
-import static com.example.backery4.ShopingCartActivity.temparraylist;
+import static com.example.backery4.ShoppingCartActivity.grandTotal;
+import static com.example.backery4.ShoppingCartActivity.grandTotalplus;
+import static com.example.backery4.ShoppingCartActivity.temparraylist;
 
 import android.content.Context;
 import android.util.Log;
@@ -78,6 +78,74 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
 
                 } else {
                     Toast.makeText(context, "", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+        holder.cartIncrement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //total_cash=0;\
+                Log.d("posthegun", String.valueOf(cartModelArrayList.get(position).getStocks()));
+
+                grandTotalplus = 0;
+                holder.cartDecrement.setEnabled(true);
+
+                int cartUpdateCounter = (cartModelArrayList.get(position).getProductQuantity());
+                Log.d("counterthegun", String.valueOf(cartModelArrayList.get(position).getProductQuantity()));
+
+                holder.cartIncrement.setEnabled(true);
+                cartUpdateCounter += 1;
+
+                cartModelArrayList.get(position).setProductQuantity((cartUpdateCounter));
+                int cash = (Integer.parseInt(cartModelArrayList.get(position).getProductPrice()) * (cartModelArrayList.get(position).getProductQuantity()));
+
+                holder.productCartQuantity.setText(String.valueOf(cartModelArrayList.get(position).getProductQuantity()));
+
+                cartModelArrayList.get(position).setTotalCash(cash);
+                holder.productCartPrice.setText(String.valueOf(cash));
+
+
+                for (int i = 0; i < temparraylist.size(); i++) {
+                    grandTotalplus = grandTotalplus + temparraylist.get(i).getTotalCash();
+                }
+                Log.d("totalcashthegun", String.valueOf(grandTotalplus));
+                grandTotal.setText(String.valueOf(grandTotalplus));
+
+            }
+
+        });
+
+        // decrement quantity and update quamtity and total cash
+        holder.cartDecrement.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //total_cash=0;
+                grandTotalplus = 0;
+                holder.cartIncrement.setEnabled(true);
+
+                int cartUpdateCounter = (cartModelArrayList.get(position).getProductQuantity());
+                Log.d("counterthegun", String.valueOf(cartModelArrayList.get(position).getProductQuantity()));
+
+
+                if (cartUpdateCounter == 1) {
+                    holder.cartDecrement.setEnabled(false);
+                    Toast.makeText(context, "quantity can't be zero", Toast.LENGTH_SHORT).show();
+                } else {
+                    holder.cartDecrement.setEnabled(true);
+                    cartUpdateCounter -= 1;
+                    cartModelArrayList.get(position).setProductQuantity((cartUpdateCounter));
+                    holder.productCartQuantity.setText(String.valueOf(cartModelArrayList.get(position).getProductQuantity()));
+                    int cash = (Integer.parseInt(cartModelArrayList.get(position).getProductPrice()) * (cartModelArrayList.get(position).getProductQuantity()));
+
+                    cartModelArrayList.get(position).setTotalCash(cash);
+                    holder.productCartPrice.setText(String.valueOf(cash));
+                    for (int i = 0; i < temparraylist.size(); i++) {
+                        grandTotalplus = grandTotalplus + temparraylist.get(i).getTotalCash();
+                    }
+
+                    Log.d("totalcashthegun", String.valueOf(grandTotalplus));
+                    grandTotal.setText(String.valueOf(grandTotalplus));
+
                 }
             }
         });

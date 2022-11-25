@@ -69,14 +69,14 @@
         android:layout_width="34dp"
         android:layout_height="23dp"
         android:layout_marginEnd="32dp"
-        android:text="$"
+        android:text="USD"
         android:textColor="@color/material_blue_grey_700"
         android:textSize="13sp"
         card_view:layout_constraintBottom_toBottomOf="parent"
         card_view:layout_constraintEnd_toEndOf="parent"
         card_view:layout_constraintStart_toEndOf="@+id/android_gridview_price"
         card_view:layout_constraintTop_toBottomOf="@+id/android_gridview_text"
-        card_view:layout_constraintVertical_bias="0.454" />
+        card_view:layout_constraintVertical_bias="0.545" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

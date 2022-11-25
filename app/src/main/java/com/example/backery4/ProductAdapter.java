@@ -89,7 +89,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
                     @Override
                     public void onClick(View v) {
 
-                        context.startActivity(new Intent(context, ShopingCartActivity.class));
+                        context.startActivity(new Intent(context, ShoppingCartActivity.class));
                     }
                 });
 

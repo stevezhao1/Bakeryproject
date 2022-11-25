@@ -15,11 +15,9 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.backery4.R;
-
 import java.util.ArrayList;
 
-public class ShopingCartActivity extends AppCompatActivity {
+public class ShoppingCartActivity extends AppCompatActivity {
     public static TextView grandTotal;
     public static int grandTotalplus;
 
@@ -35,7 +33,7 @@ public class ShopingCartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_shoping_cart);
+        setContentView(R.layout.activity_shopping_cart);
 
 
         context = this;
@@ -105,7 +103,7 @@ public class ShopingCartActivity extends AppCompatActivity {
         proceedToBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ShopingCartActivity.this, "order placed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ShoppingCartActivity.this, "order placed", Toast.LENGTH_SHORT).show();
                 //bookMyOrder();
             }
         });
