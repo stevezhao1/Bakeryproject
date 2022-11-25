@@ -8,10 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 
-import com.example.backery4.model.ProductModel;
-
-import java.util.ArrayList;
-
 public class BakeryProduct extends AppCompatActivity {
 
     CheckBox breadCheck;

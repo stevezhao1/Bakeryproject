@@ -1,4 +1,4 @@
-package com.example.backery4.model;
+package com.example.backery4;
 
 import java.io.Serializable;
 

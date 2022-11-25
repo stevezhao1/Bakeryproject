@@ -1,4 +1,4 @@
-package com.example.backery4.model;
+package com.example.backery4;
 
 public class ProductImage {
 

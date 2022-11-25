@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.backery4.model.ProductModel;
-
 public class Stores extends AppCompatActivity {
     private TextView bagelView;
     private TextView breadView;
