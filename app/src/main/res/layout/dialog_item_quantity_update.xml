@@ -17,18 +17,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <ImageView
         android:id="@+id/imageView_close_dialog_cart"
         android:layout_width="60dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="208dp"
+        android:layout_marginTop="16dp"
         android:gravity="center"
         android:src="@drawable/ic_delete_black"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view5" />
+
 
     <View
         android:id="@+id/view3"
@@ -59,7 +59,7 @@
         android:id="@+id/cart_product_quantity_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="52dp"
         android:text="0"
 
         android:textSize="50dp"
@@ -97,9 +97,9 @@
         android:id="@+id/view_cart_button_dialog"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="@+id/view5"
-        app:layout_constraintHorizontal_bias="0.687"
+        app:layout_constraintHorizontal_bias="0.832"
         app:layout_constraintStart_toEndOf="@+id/imageView_close_dialog_cart"
         app:layout_constraintTop_toTopOf="@+id/view5"
         app:srcCompat="@drawable/ic_shopping_cart_white_24dp" />

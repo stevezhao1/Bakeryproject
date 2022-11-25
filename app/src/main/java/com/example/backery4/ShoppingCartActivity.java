@@ -41,13 +41,13 @@ public class ShoppingCartActivity extends AppCompatActivity {
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
         proceedToBook = findViewById(R.id.proceed_to_book);
         grandTotal = findViewById(R.id.grand_total_cart);
-        setSupportActionBar(mToolbar);
+/*        setSupportActionBar(mToolbar);*/
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
         getSupportActionBar().setTitle("Cart");
 
 
-        mToolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_back_arrow));
+//        mToolbar.setNavigationIcon(getResources().getDrawable(R.drawable.ic_back_arrow));
         mToolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -92,7 +92,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
         for (int i = 0; i < temparraylist.size(); i++) {
             grandTotalplus = grandTotalplus + temparraylist.get(i).getTotalCash();
         }
-        grandTotal.setText("EGP " + String.valueOf(grandTotalplus));
+        grandTotal.setText("$ " + String.valueOf(grandTotalplus));
         cartRecyclerView = findViewById(R.id.recycler_view_cart);
         cartAdapter = new CartAdapter(temparraylist, this);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);

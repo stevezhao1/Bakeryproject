@@ -10,7 +10,7 @@
         android:label=""
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Backery"
+        android:theme="@style/Theme.Bakery"
         tools:targetApi="31">
 
         <activity
