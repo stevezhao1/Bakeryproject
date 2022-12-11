@@ -2,8 +2,8 @@
     <string name="app_name">Backery4</string>
 
     <string-array name="stores">
-        <item>Giant</item>
-        <item>Safeway</item>
-        <item>Whole Food</item>
+        <item>Arlington</item>
+        <item>Foggy Bottom</item>
+        <item>Capital Hill</item>
     </string-array>
 </resources>

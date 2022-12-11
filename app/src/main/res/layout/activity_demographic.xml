@@ -86,7 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
         android:layout_marginTop="20dp"
-        android:text="Select your Store"
+        android:text="Select your Community"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Zipcode_value" />
