@@ -37,14 +37,14 @@ public class ShoppingCartActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopping_cart);
 
-        Button check_store = (Button) findViewById(R.id.check_store);
+        Button check_store = (Button) findViewById(R.id.availableStore);
 
-        check_store.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(ShoppingCartActivity.this,Grocerry_store.class));
-            }
-        });
+//        check_store.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(ShoppingCartActivity.this,Grocerry_store.class));
+//            }
+//        });
 
 
         context = this;

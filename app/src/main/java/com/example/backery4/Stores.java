@@ -27,7 +27,7 @@ public class Stores extends AppCompatActivity {
         doughnutView = findViewById(R.id.doughnutShown);
         muffinView = findViewById(R.id.muffinShown);
         pieView = findViewById(R.id.pieShown);
-        purchaseButton = findViewById(R.id.purchase_button);
+        purchaseButton = findViewById(R.id.availableStore);
         Intent intent = getIntent();
         ProductModel bagel = (ProductModel) intent.getSerializableExtra("bagel");
         ProductModel bread = (ProductModel) intent.getSerializableExtra("bread");
@@ -57,7 +57,7 @@ public class Stores extends AppCompatActivity {
         purchaseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Stores.this, Item_page.class);
+                Intent intent = new Intent(Stores.this, Grocerry_store.class);
                 startActivity(intent);
 
             }

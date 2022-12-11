@@ -94,12 +94,12 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/purchase_button"
+        android:id="@+id/availableStore"
         android:layout_width="150dp"
         android:layout_height="58dp"
         android:layout_marginTop="632dp"
         android:backgroundTint="#FF9800"
-        android:text="Purchase "
+        android:text="Check Available store "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"

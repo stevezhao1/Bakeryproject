@@ -13,7 +13,8 @@
         android:orientation="vertical">
 
 
-        <TextView
+        <Button
+            android:id="@+id/goPurchase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Stores Details "
@@ -30,6 +31,7 @@
             >
 
             <ImageView
+                android:id="@+id/storeImage1"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_alignParentRight="true"
@@ -84,6 +86,7 @@
             >
 
             <ImageView
+                android:id="@+id/storeImage2"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_alignParentRight="true"
@@ -138,6 +141,7 @@
             >
 
             <ImageView
+                android:id="@+id/storeImage3"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_alignParentRight="true"
@@ -192,6 +196,7 @@
             >
 
             <ImageView
+                android:id="@+id/storeImage4"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_alignParentRight="true"
@@ -246,6 +251,7 @@
             >
 
             <ImageView
+                android:id="@+id/storeImage5"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_alignParentRight="true"
@@ -300,6 +306,7 @@
             >
 
             <ImageView
+                android:id="@+id/storeImage6"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_alignParentRight="true"
