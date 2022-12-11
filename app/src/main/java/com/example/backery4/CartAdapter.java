@@ -61,7 +61,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
                     notifyItemRemoved(position);
                     notifyItemRangeChanged(position, cartModelArrayList.size());
                     grandTotalplus = 0;
-                    grandTotal.setText(String.valueOf(grandTotalplus));
+                    grandTotal.setText("$" + String.valueOf(grandTotalplus));
                 }
 
                 if (cartModelArrayList.size() > 0) {
@@ -74,7 +74,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
                     }
 
                     Log.d("totalcashthegun", String.valueOf(grandTotalplus));
-                    grandTotal.setText(String.valueOf(grandTotalplus));
+                    grandTotal.setText("$" + String.valueOf(grandTotalplus));
 
                 } else {
                     Toast.makeText(context, "", Toast.LENGTH_SHORT).show();
@@ -102,14 +102,14 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
                 holder.productCartQuantity.setText(String.valueOf(cartModelArrayList.get(position).getProductQuantity()));
 
                 cartModelArrayList.get(position).setTotalCash(cash);
-                holder.productCartPrice.setText(String.valueOf(cash));
+                holder.productCartPrice.setText("$" + String.valueOf(cash));
 
 
                 for (int i = 0; i < temparraylist.size(); i++) {
                     grandTotalplus = grandTotalplus + temparraylist.get(i).getTotalCash();
                 }
                 Log.d("totalcashthegun", String.valueOf(grandTotalplus));
-                grandTotal.setText(String.valueOf(grandTotalplus));
+                grandTotal.setText("$" + String.valueOf(grandTotalplus));
 
             }
 
@@ -138,13 +138,13 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
                     int cash = (Integer.parseInt(cartModelArrayList.get(position).getProductPrice()) * (cartModelArrayList.get(position).getProductQuantity()));
 
                     cartModelArrayList.get(position).setTotalCash(cash);
-                    holder.productCartPrice.setText(String.valueOf(cash));
+                    holder.productCartPrice.setText("$" + String.valueOf(cash));
                     for (int i = 0; i < temparraylist.size(); i++) {
                         grandTotalplus = grandTotalplus + temparraylist.get(i).getTotalCash();
                     }
 
                     Log.d("totalcashthegun", String.valueOf(grandTotalplus));
-                    grandTotal.setText(String.valueOf(grandTotalplus));
+                    grandTotal.setText("$" + String.valueOf(grandTotalplus));
 
                 }
             }

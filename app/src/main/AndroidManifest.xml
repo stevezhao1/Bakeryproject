@@ -62,20 +62,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".BakeryProducts2"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".BakeryProducts"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".demographic"
             android:exported="false">
             <meta-data
