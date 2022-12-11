@@ -13,6 +13,13 @@
         android:theme="@style/Theme.Bakery"
         tools:targetApi="31">
         <activity
+            android:name=".safeway"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".Grocerry_store"
             android:exported="false">
             <meta-data
