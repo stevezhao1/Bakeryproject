@@ -13,7 +13,7 @@
         android:orientation="vertical">
 
 
-        <Button
+        <TextView
             android:id="@+id/goPurchase"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -39,15 +39,17 @@
                 android:layout_marginRight="0dp"
                 android:src="@drawable/whole_foods_market_logo" />
 
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Whole Foods"
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:fontFamily="@font/brandon_bold"
                 android:paddingTop="10dp"
-                android:paddingLeft="28dp"/>
+                android:background="#00000000"
+                android:paddingLeft="28dp"
+                android:id="@+id/store1"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -94,15 +96,17 @@
                 android:layout_marginRight="0dp"
                 android:src="@drawable/giant" />
 
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Giant"
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:fontFamily="@font/brandon_bold"
                 android:paddingTop="10dp"
-                android:paddingLeft="28dp"/>
+                android:background="#00000000"
+                android:paddingLeft="28dp"
+                android:id="@+id/store2"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -149,15 +153,17 @@
                 android:layout_marginRight="0dp"
                 android:src="@drawable/safeway" />
 
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Safeway"
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:fontFamily="@font/brandon_bold"
                 android:paddingTop="10dp"
-                android:paddingLeft="28dp"/>
+                android:background="#00000000"
+                android:paddingLeft="28dp"
+                android:id="@+id/store3"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -204,15 +210,17 @@
                 android:layout_marginRight="0dp"
                 android:src="@drawable/whole_foods_market_logo" />
 
-            <TextView
+            <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Whole Foods"
+                android:text="WHOLE FOODS"
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:fontFamily="@font/brandon_bold"
                 android:paddingTop="10dp"
-                android:paddingLeft="28dp"/>
+                android:background="#00000000"
+                android:paddingLeft="28dp"
+                android:id="@+id/store4"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

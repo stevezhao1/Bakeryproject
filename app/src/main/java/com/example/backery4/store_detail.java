@@ -18,15 +18,30 @@ Button button;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_store_detail);
-        button = findViewById(R.id.goPurchase);
-        button.setOnClickListener(new View.OnClickListener() {
+
+        Button store1 = (Button) findViewById(R.id.store1);
+        Button store2 = (Button) findViewById(R.id.store2);
+        Button store3 = (Button) findViewById(R.id.store3);
+
+
+        store1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(store_detail.this,Item_page.class));
             }
         });
-
-
+        store2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(store_detail.this,Item_page.class));
+            }
+        });
+        store3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(store_detail.this,Item_page.class));
+            }
+        });
 
 
     }
