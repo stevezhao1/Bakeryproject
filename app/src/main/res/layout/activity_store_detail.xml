@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Grocerry_store">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stores Details "
+            android:textSize="30sp"
+            android:fontFamily="@font/brandon"
+            android:textAllCaps="true"/>
+
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_green"
+            >
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-28dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/whole_foods_market_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whole Foods"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="10dp"
+                android:paddingLeft="28dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2201 I St NW, Washington, DC 20037"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="65dp"
+                android:paddingLeft="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MON-SUN 7AM - 10PM"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="95dp"
+                android:paddingLeft="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.5 miles"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="120dp"
+                android:paddingLeft="12dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_yellow"
+            >
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-32dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/giant" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giant"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="10dp"
+                android:paddingLeft="28dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1400 7th St NW, Washington, DC 20001"
+                android:textColor="@color/black"
+                android:textSize="12.5sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="65dp"
+                android:paddingLeft="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MON-SUN 6AM - 10PM"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="95dp"
+                android:paddingLeft="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.2 miles"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="120dp"
+                android:paddingLeft="12dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_red"
+            >
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-1dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/safeway" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Safeway"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="10dp"
+                android:paddingLeft="28dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1525 Wilson Blvd, Arlington, VA 22209"
+                android:textColor="@color/black"
+                android:textSize="12.5sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="65dp"
+                android:paddingLeft="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MON-SUN 6AM - 11PM"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="95dp"
+                android:paddingLeft="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.5 miles"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="120dp"
+                android:paddingLeft="12dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_green"
+            >
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-28dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/whole_foods_market_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whole Foods"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="10dp"
+                android:paddingLeft="28dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2700 Wilson Blvd, Arlington, VA 22201"
+                android:textColor="@color/black"
+                android:textSize="12.5sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="65dp"
+                android:paddingLeft="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MON-SUN 7AM - 9PM"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="95dp"
+                android:paddingLeft="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.2 miles"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="120dp"
+                android:paddingLeft="12dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_red"
+            >
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-1dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/safeway" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Safeway"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="10dp"
+                android:paddingLeft="28dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1747 Columbia Rd NW, Washington, DC 20009"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="65dp"
+                android:paddingLeft="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MON-SUN 6AM - 10PM"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="95dp"
+                android:paddingLeft="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.2 miles"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="120dp"
+                android:paddingLeft="12dp"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/round_yellow"
+            >
+
+            <ImageView
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="-32dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/giant" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giant"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="10dp"
+                android:paddingLeft="28dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3115 Lee Hwy, Arlington, VA 22201"
+                android:textColor="@color/black"
+                android:textSize="12.5sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="65dp"
+                android:paddingLeft="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MON-SUN 6AM - 10PM"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="95dp"
+                android:paddingLeft="12dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6.8 miles"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="120dp"
+                android:paddingLeft="12dp"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

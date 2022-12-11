@@ -38,15 +38,7 @@
                 android:textSize="30sp"
                 android:fontFamily="@font/brandon_bold"
                 android:padding="40dp"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="See Detail"
-                android:background="#00000000"
-                android:padding="20dp"
-                android:id="@+id/safeway"
-                android:textColor="@color/black"
-                android:layout_alignParentBottom="true"/>
+
             <ImageView
                 android:layout_width="130dp"
                 android:layout_height="130dp"
@@ -58,7 +50,7 @@
         <RelativeLayout
             android:layout_width="350dp"
             android:layout_height="150dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/round_green"
             >
@@ -79,18 +71,12 @@
                 android:textSize="30sp"
                 android:fontFamily="@font/brandon_bold"
                 android:padding="40dp"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="See Detail"
-                android:background="#00000000"
-                android:padding="20dp"
-                android:layout_alignParentBottom="true"/>
+
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="350dp"
             android:layout_height="150dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/round_yellow">
             <ImageView
@@ -109,16 +95,35 @@
                 android:textSize="30sp"
                 android:fontFamily="@font/brandon_bold"
                 android:padding="40dp"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:background="#FF9800">
+<!--            android:background="@drawable/food_back">-->
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="See Detail"
+                android:text="Store Detail"
+                android:textColor="@color/white"
                 android:background="#00000000"
-                android:padding="20dp"
-                android:layout_alignParentBottom="true"/>
+                android:textSize="30sp"
+                android:fontFamily="@font/brandon_bold"
+                android:paddingTop="50dp"
+                android:paddingLeft="78dp"
+                android:id="@+id/detail"
+                />
+
+
 
         </RelativeLayout>
 
 
     </LinearLayout>
+
 </ScrollView>
