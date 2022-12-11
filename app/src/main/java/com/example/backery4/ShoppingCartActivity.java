@@ -8,9 +8,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -34,6 +36,15 @@ public class ShoppingCartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shopping_cart);
+
+        Button check_store = (Button) findViewById(R.id.check_store);
+
+        check_store.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ShoppingCartActivity.this,Grocerry_store.class));
+            }
+        });
 
 
         context = this;
@@ -92,7 +103,7 @@ public class ShoppingCartActivity extends AppCompatActivity {
         for (int i = 0; i < temparraylist.size(); i++) {
             grandTotalplus = grandTotalplus + temparraylist.get(i).getTotalCash();
         }
-        grandTotal.setText("$ " + String.valueOf(grandTotalplus));
+        grandTotal.setText(" $ " + String.valueOf(grandTotalplus));
         cartRecyclerView = findViewById(R.id.recycler_view_cart);
         cartAdapter = new CartAdapter(temparraylist, this);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this);

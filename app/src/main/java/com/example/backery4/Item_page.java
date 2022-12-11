@@ -39,22 +39,22 @@ public class Item_page extends AppCompatActivity implements ProductAdapter.HomeC
     }
     private void addProduct() {
 
-        ProductModel productModel = new ProductModel("bagel", "10", "20", R.drawable.bagel,0.35);
+        ProductModel productModel = new ProductModel("bagel(one dozen)", "10", "20", R.drawable.bagel,0.35);
         arrayList.add(productModel);
 
-        ProductModel productModel1 = new ProductModel("bread", "8", "10", R.drawable.bread,0.35);
+        ProductModel productModel1 = new ProductModel("bread(20 oz)", "1", "10", R.drawable.bread,0.35);
         arrayList.add(productModel1);
 
-        ProductModel productModel2 = new ProductModel("cookie", "9", "40", R.drawable.cookie,0.35);
+        ProductModel productModel2 = new ProductModel("cookie(one dozen)", "11", "40", R.drawable.cookie,0.35);
         arrayList.add(productModel2);
 
-        ProductModel productModel3 = new ProductModel("doughnut", "11", "20", R.drawable.doughnut,0.35);
+        ProductModel productModel3 = new ProductModel("doughnut(one dozen)", "10", "20", R.drawable.doughnut,0.35);
         arrayList.add(productModel3);
 
-        ProductModel productModel4 = new ProductModel("muffin", "10", "10", R.drawable.muffin,0.35);
+        ProductModel productModel4 = new ProductModel("muffin(four counts)", "4", "10", R.drawable.muffin,0.35);
         arrayList.add(productModel4);
 
-        ProductModel productModel5 = new ProductModel("pie", "10", "20", R.drawable.pie,0.35);
+        ProductModel productModel5 = new ProductModel("pie(whole piece)", "6", "20", R.drawable.pie,0.35);
         arrayList.add(productModel5);
     }
 

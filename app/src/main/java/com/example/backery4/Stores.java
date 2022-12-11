@@ -37,22 +37,22 @@ public class Stores extends AppCompatActivity {
         ProductModel pie = (ProductModel) intent.getSerializableExtra("pie");
 
         if(bagel != null ){
-            bagelView.setText(bagel.getProductName() + " discount : " + bagel.getDiscount());
+            bagelView.setText(bagel.getProductName() + " discount : $" + bagel.getDiscount());
         }
         if(bread != null){
-            breadView.setText(bread.getProductName() + " discount : " + bread.getDiscount());
+            breadView.setText(bread.getProductName() + " discount : $" + bread.getDiscount());
         }
         if(cookie != null){
-            cookieView.setText(cookie.getProductName() + " discount : " + cookie.getDiscount());
+            cookieView.setText(cookie.getProductName() + " discount : $" + cookie.getDiscount());
         }
         if(doughnut != null){
-            doughnutView.setText(doughnut.getProductName() + " discount : " + doughnut.getDiscount());
+            doughnutView.setText(doughnut.getProductName() + " discount : $" + doughnut.getDiscount());
         }
         if(muffin != null){
-            muffinView.setText(muffin.getProductName() + " discount : " + muffin.getDiscount());
+            muffinView.setText(muffin.getProductName() + " discount : $" + muffin.getDiscount());
         }
         if(pie != null){
-            pieView.setText(pie.getProductName() + " discount : " + pie.getDiscount());
+            pieView.setText(pie.getProductName() + " discount : $" + pie.getDiscount());
         }
         purchaseButton.setOnClickListener(new View.OnClickListener() {
             @Override

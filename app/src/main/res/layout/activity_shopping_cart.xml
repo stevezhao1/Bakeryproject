@@ -25,29 +25,37 @@
         android:background="#FF9800"
         android:layout_weight=".2">
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="PROCEED"
-            android:textColor="#fff"
-            android:gravity="right|center_vertical"
-            android:textStyle="bold"
-            android:textSize="24sp"
-            android:padding="15dp"/>
-
-        <TextView
-            android:padding="15dp"
+            android:id="@+id/total"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
-            android:id="@+id/grand_total_cart"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
             android:layout_weight="1"
-            android:text="CHECK OUT"
-            android:textSize="24sp"
-            android:textColor="#fff"
             android:gravity="left|center_vertical"
-            android:textStyle="bold"
-            android:layout_marginRight="10dp"/>
+            android:padding="15dp"
+            android:text="Total:"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/grand_total_cart"
+            android:layout_width="267dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="left|center_vertical"
+            android:padding="15dp"
+            android:text="CHECK OUT"
+            android:textColor="#fff"
+            android:textSize="24sp"
+            android:textStyle="bold" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/check_store"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:text="Check Avaliable Store" />
 
 </LinearLayout>
