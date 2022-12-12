@@ -111,10 +111,11 @@ public class ShoppingCartActivity extends AppCompatActivity {
         cartRecyclerView.setAdapter(cartAdapter);
 
 
+
         proceedToBook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(ShoppingCartActivity.this, "order placed", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(ShoppingCartActivity.this,order_confirm.class));
                 //bookMyOrder();
             }
         });
